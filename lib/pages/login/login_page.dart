@@ -17,7 +17,7 @@ class _LoginPageState extends State<LoginPage> {
     return Scaffold(
       body: Container(
           height: MediaQuery.of(context).size.height,
-          padding: EdgeInsets.symmetric(horizontal: 50),
+          padding: EdgeInsets.symmetric(horizontal: 50, vertical: 30),
           decoration: BoxDecoration(
             gradient: LinearGradient(
               begin: Alignment.topCenter,
@@ -68,11 +68,6 @@ class _LoginPageState extends State<LoginPage> {
                             Icons.mail_outline,
                             color: Color.fromARGB(255, 99, 1, 1),
                           ),
-                          border: UnderlineInputBorder(
-                            borderSide: BorderSide(
-                              color: Color.fromARGB(255, 99, 1, 1),
-                            ),
-                          ),
                           focusedBorder: UnderlineInputBorder(
                             borderSide: BorderSide(
                               color: Color.fromARGB(255, 99, 1, 1),
@@ -96,11 +91,6 @@ class _LoginPageState extends State<LoginPage> {
                             Icons.vpn_key_sharp,
                             color: Color.fromARGB(255, 99, 1, 1),
                           ),
-                          border: UnderlineInputBorder(
-                            borderSide: BorderSide(
-                              color: Color.fromARGB(255, 99, 1, 1),
-                            ),
-                          ),
                           focusedBorder: UnderlineInputBorder(
                             borderSide: BorderSide(
                               color: Color.fromARGB(255, 99, 1, 1),
@@ -114,6 +104,22 @@ class _LoginPageState extends State<LoginPage> {
                         ),
                       )
                     ],
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(bottom: 10),
+                ),
+                GestureDetector(
+                  onTap: () {
+                    print("FUNCIONOU!");
+                  },
+                  child: Text(
+                    "Esqueceu a senha?",
+                    style: TextStyle(
+                      color: Color.fromARGB(255, 99, 1, 1),
+                      fontSize: 12,
+                    ),
+                    textAlign: TextAlign.right,
                   ),
                 ),
               ],
