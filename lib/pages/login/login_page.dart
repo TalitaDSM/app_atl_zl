@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:app_atl_zl/values/custom_colors.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatefulWidget {
@@ -14,9 +15,12 @@ class _LoginPageState extends State<LoginPage> {
   Color bottomColor = Color.fromARGB(255, 229, 229, 229);
 
   bool continueConnected = false;
+  
+  get child => null;
 
   @override
   Widget build(BuildContext context) {
+    var child2 = child;
     return Scaffold(
       body: Container(
         height: MediaQuery.of(context).size.height,
@@ -145,10 +149,25 @@ class _LoginPageState extends State<LoginPage> {
                   )
                 ],
               ),
-              RaisedButton(
+              child: RaisedButton(
                 onPressed: () {},
-                child: Text("Login"),
-              )
+                child: Text(
+                  "Login", 
+                  style: TextStyle(
+                    color: Color.fromARGB(255, 99, 1, 1),
+                  ),
+                ),
+                color: CustomColors().getActiveprimaryButtonColor(),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(50),
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.symmetric(vertical: 10),
+                child: Divider(
+                color: Colors.black,
+                ),
+              ),
             ],
           ),
         ),
