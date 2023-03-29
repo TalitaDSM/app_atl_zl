@@ -1,14 +1,29 @@
 import 'package:flutter/material.dart';
 
 class CustomColors {
-  Color activePrimaryButton = Color.fromARGB(255, 99, 1, 1);
-  Color activeSecondaryButton = Color.fromARGB(255, 99, 1, 1);
+  Color _activePrimaryButton = Color.fromARGB(255, 229, 229, 229);
+  Color _activeSecondaryButton = Color.fromARGB(255, 229, 229, 229);
+  Color _gradientMainColor = Color(0xff00ADFA);
+  Color _gradientSecColor = Color(0xff00E6FD);
+  Color _appBarMainColor = Color(0xff0A6D92);
 
-  Color getActiveprimaryButtonColor() {
-    return activePrimaryButton;
+  Color getActivePrimaryButtonColor() {
+    return _activePrimaryButton;
   }
 
-  Color getActivesecondaryButtonColor() {
-    return activeSecondaryButton;
+  Color getActiveSecondaryButton() {
+    return _activeSecondaryButton;
+  }
+
+  Color getGradientMainColor() {
+    return _gradientMainColor;
+  }
+
+  Color getGradientSecondaryColor() {
+    return _gradientSecColor;
+  }
+
+  Color getAppBarMainColor() {
+    return _appBarMainColor;
   }
 }
