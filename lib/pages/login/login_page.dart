@@ -3,7 +3,7 @@ import 'package:app_atl_zl/pages/login/login_service.dart';
 import 'package:app_atl_zl/pages/sign_up/sign_up_page.dart';
 import 'package:app_atl_zl/shared/constants/custom_colors.dart';
 
-import '../../values/custom_colors.dart';
+import '../../shared/constants/custom_colors.dart';
 
 class LoginPage extends StatefulWidget {
 
